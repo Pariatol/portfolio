@@ -216,8 +216,8 @@ header h2{
     border-radius:2rem;
 }
 
-.item:hover{
-    transform:scale(1.1);
+#work a{
+    text-decoration:none;
 }
 
 #work img{
@@ -226,17 +226,27 @@ header h2{
     width:25rem;
 }
 
-/* .item:first-child{
-    background:url('./img/courbesVoies.JPG');
-    background-size: cover;
-    background-position: 5% 5%;
+.description{
+    display: none;
+    color:black;
+    font-family: sans-serif;
+    word-break:keep-all;
+    font-size:2rem;
+    margin-left:1rem;
 }
 
-.item:nth-child(2){
-    background:url('./img/buySfBooks.JPG');
-    background-size: cover;
-    background-position: 5% 5%;
-} */
+.item:hover{
+    background-color:#f0b5d8;
+    border:3px solid rgb(31, 29, 29);
+}
+
+.item:hover .description{
+    display:block;
+}
+
+.item:hover img{
+    display:none;
+}
 
 /* Contact */
 
