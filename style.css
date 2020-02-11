@@ -1,0 +1,355 @@
+/* Général */
+
+html{
+    margin:0;
+    padding:0;
+    font-size:10px;
+    font-family: 'Indie Flower', cursive;
+}
+
+body{
+    background-color: rgb(31, 29, 29);
+    border:0;
+    padding:0;
+}
+
+.main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:url('./img/bg.jpg');
+    background-size:cover;
+    background-position: center;
+    height:100vh;
+}
+
+/* Navigation */
+
+.navbar{
+    position:fixed;
+    top:2%;
+    font-size:2rem;
+    border-radius:8px; 
+    height:20vh;
+    width:85%;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items:center;
+    background-color: rgba(235, 174, 243, 0.5);
+    z-index:1;
+}
+
+
+.navbar img{
+    height:17vh;
+    border-radius:50%;
+}
+
+.navbar img:hover{
+    transform:rotateY(180deg);
+    filter: drop-shadow(3px 1px 4px #f0a1d1);}
+
+.links ul{
+    display:flex;
+    justify-content:space-between;
+}
+
+.links li{
+    list-style-type: none;
+    padding: 0 2rem 0 2rem;
+    letter-spacing: 0.3rem;
+    font-weight:700;
+    font-size:3rem;
+}
+
+.links a{
+    text-decoration:none;
+    color:black;
+}
+
+.links li:hover{
+    text-shadow: 0 0 5px #FFF, 
+    0 0 10px #FFF, 
+    0 0 15px #FFF, 
+    0 0 20px #f0a1d1, 
+    0 0 30px #f0a1d1, 
+    0 0 40px #f0a1d1, 
+    0 0 55px #f0a1d1, 
+    0 0 75px #f0a1d1, 
+    2px 2px 2px rgba(255,196,243,0);
+}
+
+.pinkNavbar{
+    background-color:rgba(240,181,216,0.5);
+}
+
+.darkNavbar{
+    background-color: rgb(31, 29, 29,0.5);
+}
+
+.darkNavbar a{
+    color:rgb(243, 217, 221);
+}
+
+.darkNavbar li:hover{
+    text-shadow: 0 0 5px #FFF, 
+    0 0 10px #272426, 
+    0 0 15px #272426, 
+    0 0 20px #272426, 
+    0 0 30px #272426, 
+    0 0 40px #272426, 
+    0 0 55px #272426, 
+    0 0 75px #272426, 
+    2px 2px 2px rgba(255,196,243,0);
+}
+/* Header */
+
+header{
+    color:rgb(243, 217, 221);
+    text-align:center;
+    /* width:80%;
+    height:50%;
+    background-color: rgba(235, 174, 243, 0.1); */
+    border-radius:2rem;
+}
+
+header h1{
+    font-size:7.2rem;
+    margin-bottom:0.5rem;
+}
+
+header h2{
+    margin-top:0.5rem;
+    font-size:4.2rem;
+    visibility:hidden;
+}
+
+#arrowHeader{
+    font-size:5rem;
+    visibility:hidden;
+    text-decoration:none;
+    color:rgb(243, 217, 221);
+}
+
+#arrowHeader:hover{
+    transform:scale(1.2);
+}
+
+
+/* About */
+
+#about{
+    height:100vh;
+    background-color: rgb(31, 29, 29);
+    display:flex;
+    flex-direction:column;
+}
+
+#about h2{
+    text-align:center;
+    font-size:5rem;
+    position:relative;
+    top:25%;
+    color:rgb(243, 217, 221);
+}
+
+.presentation{
+    position:relative;
+    top:18%;
+    color:rgb(243, 217, 221);
+    font-family: 'Merriweather', serif;
+    font-size:2rem;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items:stretch;
+    text-align:justify;
+}
+
+.bio, .skills{
+    width:40%;
+}
+
+
+
+/* Work */
+
+#work{
+    height:auto;
+    background-color:#f0b5d8;
+
+}
+
+#work h2{
+    text-align:center;
+    font-size:5rem;
+    position:relative;
+    top:15%;
+    color:black;
+}
+
+.workItems{
+    width: 70%;
+    position:relative;
+    top:15%;
+    left: 50%;
+    transform: translateX(-50%);
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+}
+
+.item{
+    font-family:sans-serif;
+    word-break:break-all;
+    font-size:2.8rem;
+    height:21rem;
+    width:26rem;
+    background-color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:2rem;
+    margin-right:1.5rem;
+    border-radius:2rem;
+}
+
+.item:hover{
+    transform:scale(1.1);
+}
+
+#work img{
+    border-radius:2rem;
+    height:20rem;
+    width:25rem;
+}
+
+/* .item:first-child{
+    background:url('./img/courbesVoies.JPG');
+    background-size: cover;
+    background-position: 5% 5%;
+}
+
+.item:nth-child(2){
+    background:url('./img/buySfBooks.JPG');
+    background-size: cover;
+    background-position: 5% 5%;
+} */
+
+/* Contact */
+
+#contact{
+    height:100vh;
+    background-color: rgb(31, 29, 29);
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact h2{
+    text-align:center;
+    font-size:5rem;
+    color:rgb(243, 217, 221);
+}
+
+.contactLinks{
+    font-size:10rem;
+    color:rgb(243, 217, 221);
+}
+
+.contactLinks a{
+    text-decoration:none;
+    color:rgb(243, 217, 221);
+}
+
+.iconContact:hover{
+    color:rgba(187, 81, 187,0.5);
+} 
+
+/* Media Queries */
+@media (max-width:900px){
+    .presentation{
+        font-size:1.4rem;
+    }
+}
+
+@media (max-width:804px){
+    .workItems{
+        justify-content: center;
+    }
+
+    .item{
+        height:26rem;
+        width:28rem;
+    }
+}
+
+@media (max-width: 604px) {
+    .presentation{
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .bio, .skills{
+        width:80%;
+    }
+
+    .links li{
+        font-size:2.2rem;
+    }
+}
+
+@media (max-width: 530px) {
+    .links li{
+        font-size:1.7rem;
+    }
+}
+
+@media (max-width: 484px) {
+    header h1{
+        font-size:6rem;
+    }
+
+    .navbar{
+        justify-content: center;
+    }
+
+    .links ul{
+        display:flex;
+        flex-direction:column;
+    }
+}
+
+@media (max-width: 388px){
+    header h1{
+        font-size:5rem;
+    }
+
+    .navbar{
+        width:70%;
+    }
+
+    .bio, .skills{
+        width:90%;
+    }
+
+    .presentation{
+        font-size:1.4rem;
+    }
+    .contactLinks{
+        font-size:5rem;
+        color:rgb(243, 217, 221);
+    }
+
+}
+
+@media (max-width: 358px){
+    .presentation{
+        font-size:1.2rem;
+    }
+}

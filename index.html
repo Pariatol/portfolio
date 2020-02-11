@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" 
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e61bbbca85.js" crossorigin="anonymous"></script>
+
+
+    <title>Pariatol's Website</title>
+</head>
+<body>
+    <div class="main">
+        <nav class="navbar" id="navbar">
+            <div class="profilePic">
+                <a href="index.html"><img id="profPic" src="img/myAvatar.png"/></a>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="#about" id="aboutLink">About</a></li>
+                    <li><a href="#work" id="workLink">Work</a></li>
+                    <li><a href="#contact" id="contactLink">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <header>
+            <h1 id="textHeader">Hi, I'm Pariatol !</h1>
+            <h2 id="textSub">Web Developper</h2>
+            <a href="#about" id="aboutLinkArrow"><i class="far fa-arrow-alt-circle-down" id="arrowHeader"></i></a>
+        </header>
+
+
+
+
+    </div>
+    <section id="about">
+        <h2>Who Am I ?</h2>
+        <div class="presentation">
+            <div class="bio">
+                <p>I'm 32 years old. When I was a teenager, I had two passions : programmation and philosophy. I followed the latter ("prépa", "Ecole Normale Supérieure de Lyon", "agrégation") and put the former aside for a while. After a few years as a philosophy teacher, I came back to the computers.</p>
+                <p>But now, forget C and assembly language. I'm a web developper !</p>
+
+            </div>
+            <div class="skills">
+                <p>I'm mainly a front-end developper (React, Angular), but I'm able to do some back-end with Node.js/Express/SQL or MongoDB.</p>
+                <p>What I want to learn in the coming years : Go, Python, and re-learn C to try WebAssembly.</p>
+            </div>
+            
+        </div>
+
+    </section>
+    
+    
+    <section id="work">
+        <h2>My Portfolio</h2>
+        <div class="workItems">
+            <a href="https://pariatol.github.io/courbes-voies" target="_blank"><div class="item">
+                <img src="./img/courbesVoies.JPG"/>
+            </div></a>
+
+            <a href="https://pariatol.github.io/buy-sf-books" target="_blank"><div class="item">
+                <img src="./img/buySfBooks.JPG"/>
+            </div></a>
+
+            <a href="https://pariatol.github.io/metal-cover-viewer" target="_blank"><div class="item">
+                <img src="./img/metalCover.JPG"/>
+            </div></a>
+
+            <a href="https://pariatol.github.io/calculator" target="_blank"><div class="item">
+                <img src="./img/calculator.JPG"/>
+            </div></a>
+
+            <a href="https://pariatol.github.io/temps-scolaire" target="_blank"><div class="item">
+                <img src="./img/ecoleMercredi.JPG"/>
+            </div></a>
+
+            <a href="https://github.com/Pariatol/todoReactNodeSql" target="_blank"><div class="item">
+                <img src="./img/todoApp.JPG"/>
+            </div></a>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contactLinks">
+            <a href="https://github.com/Pariatol"><i class="fab fa-github-alt iconContact"></i></a>
+            <a href="mailto:xyz369852147@gmail.com"><i class="far fa-envelope iconContact"></i></a>
+            <a href="https://twitter.com/pariatol"><i class="fab fa-twitter iconContact"></i></a>
+        </div>
+    </section>
+    
+    
+<script>
+    // animation de départ
+    const whereToPrintHead = document.getElementById('textHeader');
+    const whereToPrintSub = document.getElementById('textSub');
+    const arrowHeader = document.getElementById('arrowHeader');
+
+    const textToPrintHead = "Hi, I'm Pariatol";
+    const textToPrintSub = "Web Developper";
+
+
+    var i = 0;
+
+    const print = () => {
+        whereToPrintHead.innerHTML = textToPrintHead.slice(0,i);
+        i++;
+        if(i===textToPrintHead.length+1){
+            clearInterval(timer)
+            let timeout = setTimeout(()=> {
+                whereToPrintSub.style.visibility = "visible";
+
+                    },700);
+            let timeout2 = setTimeout(()=> {
+                arrowHeader.style.visibility = "visible";
+
+                    },1100);
+                
+            }
+    }
+    
+    let timer = setInterval(print, 60);
+
+    // menu dynamique
+    const workLink = document.getElementById('workLink');
+    const aboutLink = document.getElementById('aboutLink');
+    const aboutLinkArrow = document.getElementById('aboutLinkArrow');
+    const contactLink = document.getElementById('contactLink');
+    const navbar = document.getElementById('navbar');
+
+    workLink.addEventListener('click',()=> {
+        navbar.classList.remove('darkNavbar');
+        navbar.classList.add("pinkNavbar");
+        console.log(workLink.classList)
+    });
+
+    aboutLink.addEventListener('click',()=> {
+        navbar.classList.remove('pinkNavbar');
+        navbar.classList.add("darkNavbar");
+        console.log(workLink.classList)
+    });
+
+    aboutLinkArrow.addEventListener('click',()=> {
+        navbar.classList.remove('pinkNavbar');
+        navbar.classList.add("darkNavbar");
+        console.log(workLink.classList)
+    });
+
+    contactLink.addEventListener('click',()=> {
+        navbar.classList.remove('pinkNavbar');
+        navbar.classList.add("darkNavbar");
+        console.log(workLink.classList)
+    });
+    
+</script>
+</body>
+</html>
