@@ -171,7 +171,18 @@ header h2{
     width:40%;
 }
 
+#arrowToWork{
+    font-size:5rem;
+    position:relative;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom:-13rem;
+}
 
+#workLinkArrow{
+    text-decoration: none;
+    color:rgb(243, 217, 221);
+}
 
 /* Work */
 
@@ -246,6 +257,20 @@ header h2{
 
 .item:hover img{
     display:none;
+}
+
+#arrowToContact{
+    margin-top:2rem;
+    font-size:5rem;
+    position:relative;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom:1rem;
+}
+
+#contactLinkArrow{
+    text-decoration: none;
+    color:rgb(31, 29, 29);
 }
 
 /* Contact */
