@@ -133,6 +133,8 @@ header h2{
     visibility:hidden;
     text-decoration:none;
     color:rgb(243, 217, 221);
+    transition-duration: 280ms;
+
 }
 
 #arrowHeader:hover{

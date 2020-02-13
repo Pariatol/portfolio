@@ -141,6 +141,10 @@
     const workLink = document.getElementById('workLink');
     const aboutLink = document.getElementById('aboutLink');
     const aboutLinkArrow = document.getElementById('aboutLinkArrow');
+    const workLinkArrow = document.getElementById('workLinkArrow');
+    const contactLinkArrow = document.getElementById('contactLinkArrow');
+
+
     const contactLink = document.getElementById('contactLink');
     const navbar = document.getElementById('navbar');
 
@@ -157,6 +161,18 @@
     });
 
     aboutLinkArrow.addEventListener('click',()=> {
+        navbar.classList.remove('pinkNavbar');
+        navbar.classList.add("darkNavbar");
+        console.log(workLink.classList)
+    });
+
+    workLinkArrow.addEventListener('click',()=> {
+        navbar.classList.remove('darkNavbar');
+        navbar.classList.add("pinkNavbar");
+        console.log(workLink.classList)
+    });
+
+    contactLinkArrow.addEventListener('click',()=> {
         navbar.classList.remove('pinkNavbar');
         navbar.classList.add("darkNavbar");
         console.log(workLink.classList)
