@@ -230,13 +230,13 @@ header h2{
     margin-bottom:2rem;
     margin-right:1.5rem;
     border-radius:2rem;
-    transition-duration: 400ms;
+    transition-duration: 800ms;
 
 }
 
 .item:hover{
     background-color:#f0b5d8;
-    border:3px solid rgb(31, 29, 29);
+    border:10px solid rgb(31, 29, 29);
 }
 
 .item:hover .description{
