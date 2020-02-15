@@ -157,7 +157,7 @@ header h2{
 #about h2{
     text-align:center;
     font-size:5rem;
-    margin-top:12%;
+    margin-top:15%;
     color:rgb(243, 217, 221);
 }
 
@@ -180,13 +180,14 @@ header h2{
 
 .arrowLink{
     justify-self: center;
-    margin-bottom:20%;
 }
 
 #arrowToWork{
     font-size:5rem;
     transition-property:transform;
     transition-duration: 600ms;
+    margin-bottom:20%;
+
 }
 
 #arrowToWork:hover{
@@ -330,6 +331,30 @@ header h2{
 } 
 
 /* Media Queries */
+@media (max-width:1654px){
+    #about h2{
+        margin-top:20%;
+    }
+}
+
+@media (max-width:1246px){
+    #about h2{
+        margin-top:30%;
+    }
+}
+
+@media (max-width:842px){
+    #about h2{
+        margin-top:40%;
+    }
+}
+
+@media (max-width:630px){
+    #about h2{
+        margin-top:45%;
+    }
+}
+
 @media (max-width:920px){
     #work h2{
         padding-top:20%;
@@ -346,11 +371,31 @@ header h2{
     #work h2{
         padding-top:30%;
     }
+    #about h2{
+        margin-top:50%;
+    }
+}
+
+@media (max-width:510px){
+
+    #about h2{
+        margin-top:55%;
+    }
+}
+
+@media (max-width:554px){
+
+    #about h2{
+        margin-top:60%;
+    }
 }
 
 @media (max-width:460px){
     #work h2{
         padding-top:35%;
+    }
+    #about h2{
+        margin-top:68%;
     }
 }
 
@@ -358,11 +403,17 @@ header h2{
     #work h2{
         padding-top:40%;
     }
+    #about h2{
+        margin-top:75%;
+    }
 }
 
 @media (max-width:355px){
     #work h2{
         padding-top:47%;
+    }
+    #about h2{
+        margin-top:80%;
     }
 }
 
