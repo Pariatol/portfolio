@@ -112,9 +112,6 @@ body{
 header{
     color:rgb(243, 217, 221);
     text-align:center;
-    /* width:80%;
-    height:50%;
-    background-color: rgba(235, 174, 243, 0.1); */
     border-radius:2rem;
 }
 
@@ -306,6 +303,7 @@ header h2{
 }
 
 #contact h2{
+    margin-top:22vh;
     text-align:center;
     font-size:5rem;
     color:rgb(243, 217, 221);
