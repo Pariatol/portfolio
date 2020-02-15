@@ -61,7 +61,8 @@ body{
     letter-spacing: 0.3rem;
     font-weight:700;
     font-size:3rem;
-    transition-duration: 280ms;
+    transition-property:text-shadow;
+    transition-duration: 350ms;
 }
 
 .links li:hover{
@@ -133,7 +134,8 @@ header h2{
     visibility:hidden;
     text-decoration:none;
     color:rgb(243, 217, 221);
-    transition-duration: 280ms;
+    transition-property:transform;
+    transition-duration: 600ms;
 
 }
 
@@ -145,17 +147,17 @@ header h2{
 /* About */
 
 #about{
-    height:100vh;
+    height:auto;
     background-color: rgb(31, 29, 29);
     display:flex;
     flex-direction:column;
+    align-items:center;
 }
 
 #about h2{
     text-align:center;
     font-size:5rem;
-    position:relative;
-    top:25%;
+    margin-top:12%;
     color:rgb(243, 217, 221);
 }
 
@@ -176,15 +178,23 @@ header h2{
     width:40%;
 }
 
-#arrowToWork{
-    font-size:5rem;
-    position:relative;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom:-13rem;
+.arrowLink{
+    justify-self: center;
+    margin-bottom:20%;
 }
 
-#workLinkArrow{
+#arrowToWork{
+    font-size:5rem;
+    transition-property:transform;
+    transition-duration: 600ms;
+}
+
+#arrowToWork:hover{
+    transform:scale(1.2);
+}
+
+
+#workLinkArrow{ /* <a> */ 
     text-decoration: none;
     color:rgb(243, 217, 221);
 }
@@ -194,7 +204,9 @@ header h2{
 #work{
     height:auto;
     background-color:#f0b5d8;
-
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 }
 
 #work h2{
@@ -205,11 +217,7 @@ header h2{
 }
 
 .workItems{
-    width: 70%;
-    position:relative;
-    top:15%;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
@@ -271,10 +279,14 @@ header h2{
 #arrowToContact{
     margin-top:2rem;
     font-size:5rem;
-    position:relative;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom:1rem;
+    justify-self:center;
+    margin-bottom:20%;
+    transition-property:transform;
+    transition-duration:600ms;
+}
+
+#arrowToContact:hover{
+    transform:scale(1.2);
 }
 
 #contactLinkArrow{
