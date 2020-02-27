@@ -229,20 +229,19 @@ header h2{
     font-size:2.8rem;
     height:21rem;
     width:26rem;
-    background-color:white;
+    background-color:#f1f1f1;
     display:flex;
     justify-content: center;
     align-items: center;
     margin-bottom:2rem;
     margin-right:1.5rem;
-    border-radius:2rem;
-    transition-duration: 800ms;
+    border-radius:1rem;
+    transition: all 0.4s;
 
 }
 
 .item:hover{
-    background-color:#f0b5d8;
-    border:10px solid rgb(31, 29, 29);
+    transform: translateY(-0.4rem);
 }
 
 .item:hover .description{
@@ -258,7 +257,7 @@ header h2{
 }
 
 #work img{
-    border-radius:2rem;
+    border-radius:1rem;
     height:20rem;
     width:25rem;
 }
